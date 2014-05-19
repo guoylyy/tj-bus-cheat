@@ -55,7 +55,8 @@
         android:id="@+id/imageLayout2"
         android:layout_width="match_parent"
         android:layout_height="80dip"
-        android:layout_below="@+id/imageLayout1" >
+        android:layout_below="@+id/imageLayout1" 
+        android:background="#FFF">
 
         <TextView
             android:id="@+id/textView1"
