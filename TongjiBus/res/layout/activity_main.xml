@@ -39,10 +39,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginRight="16dp"
             android:ems="10"
-            android:inputType="textPersonName" >
-
-            <requestFocus />
-        </EditText>
+            android:inputType="textPersonName" />
 
         <TextView
             android:id="@+id/TextView02"
@@ -64,44 +61,14 @@
             android:text="终点:"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
-        <MultiAutoCompleteTextView
-            android:id="@+id/time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/TextView05"
-            android:layout_alignBottom="@+id/TextView05"
-            android:layout_alignLeft="@+id/MultiAutoCompleteTextView02"
-            android:ems="10"
-            />
-
         <TextView
-            android:id="@+id/TextView05"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/TextView04"
-            android:layout_below="@+id/TextView04"
-            android:layout_marginTop="28dp"
-            android:text="直达类型:"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="15sp" />
-
-        <TextView
-            android:id="@+id/TextView04"
+            android:id="@+id/date_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/TextView03"
             android:layout_centerVertical="true"
             android:text="时间:"
             android:textAppearance="?android:attr/textAppearanceLarge" />
-
-        <Button
-            android:id="@+id/submit"
-            android:layout_width="300dip"
-            android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/name"
-            android:layout_below="@+id/time"
-            android:layout_marginTop="20dp"
-            android:text="一键生成" />
 
         <EditText
             android:id="@+id/number"
@@ -128,13 +95,46 @@
             android:layout_alignLeft="@+id/start_station"
             android:ems="10" />
 
-        <MultiAutoCompleteTextView
-            android:id="@+id/MultiAutoCompleteTextView02"
+        <TextView
+            android:id="@+id/typeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/TextView05"
+            android:layout_alignLeft="@+id/submit"
+            android:layout_below="@+id/date_time"
+            android:layout_marginTop="28dp"
+            android:text="直达类型:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/date_time"
             android:layout_alignLeft="@+id/end_station"
+            android:ems="10"
+            android:inputType="datetime"
+             >
+
+            <requestFocus />
+        </EditText>
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/typeText"
+            android:layout_alignLeft="@+id/time"
             android:ems="10" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="300dip"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/date_time"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="19dp"
+            android:text="一键生成" />
 
     </RelativeLayout>
 

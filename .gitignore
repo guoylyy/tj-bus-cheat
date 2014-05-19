@@ -1,8 +1,9 @@
-#################
+################
 ## Eclipse
 #################
 
 *.pydevproject
+*.class
 .project
 .metadata
 bin/
@@ -215,3 +216,4 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 /target
+
