@@ -43,11 +43,11 @@ public final class R {
         public static final int nameText=0x7f070010;
         public static final int number=0x7f07000b;
         public static final int start_station=0x7f07000c;
+        public static final int streamNumber=0x7f07000f;
         public static final int submit=0x7f07000a;
         public static final int textView1=0x7f070001;
         public static final int textView2=0x7f070014;
         public static final int textView3=0x7f070015;
-        public static final int textView4=0x7f07000f;
         public static final int textView6=0x7f070011;
         public static final int textView7=0x7f070012;
         public static final int time=0x7f070006;
