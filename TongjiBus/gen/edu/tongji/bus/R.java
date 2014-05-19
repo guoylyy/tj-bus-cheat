@@ -23,9 +23,11 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
-        public static final int tj_pic_bus=0x7f020001;
-        public static final int tj_pic_jiading_to_other=0x7f020002;
-        public static final int tj_pic_sanmeng=0x7f020003;
+        public static final int tj_pic_btnbg=0x7f020001;
+        public static final int tj_pic_bus=0x7f020002;
+        public static final int tj_pic_jiading_to_other=0x7f020003;
+        public static final int tj_pic_sanmeng=0x7f020004;
+        public static final int tj_pic_titlebar=0x7f020005;
     }
     public static final class id {
         public static final int MultiAutoCompleteTextView02=0x7f070008;
@@ -34,26 +36,29 @@ public final class R {
         public static final int TextView03=0x7f070005;
         public static final int TextView04=0x7f070009;
         public static final int TextView05=0x7f070007;
+        public static final int button1=0x7f070010;
         public static final int container=0x7f070000;
         public static final int end_station=0x7f07000d;
-        public static final int imageLayout1=0x7f07000e;
-        public static final int imageLayout2=0x7f070013;
-        public static final int imageLayout3=0x7f070018;
-        public static final int imageView1=0x7f070019;
-        public static final int imageView2=0x7f070017;
+        public static final int imageLayout1=0x7f070011;
+        public static final int imageLayout2=0x7f070016;
+        public static final int imageLayout3=0x7f07001b;
+        public static final int imageView1=0x7f07001c;
+        public static final int imageView2=0x7f07001a;
         public static final int name=0x7f070003;
-        public static final int nameText=0x7f070010;
+        public static final int nameText=0x7f070013;
         public static final int number=0x7f07000b;
-        public static final int progressBar1=0x7f070016;
+        public static final int progressBar1=0x7f070019;
         public static final int start_station=0x7f07000c;
-        public static final int streamNumber=0x7f07000f;
+        public static final int streamNumber=0x7f070012;
         public static final int submit=0x7f07000a;
         public static final int textView1=0x7f070001;
-        public static final int textView2=0x7f070014;
-        public static final int textView3=0x7f070015;
-        public static final int textView6=0x7f070011;
-        public static final int textView7=0x7f070012;
+        public static final int textView2=0x7f070017;
+        public static final int textView3=0x7f070018;
+        public static final int textView4=0x7f07000f;
+        public static final int textView6=0x7f070014;
+        public static final int textView7=0x7f070015;
         public static final int time=0x7f070006;
+        public static final int titleLayout=0x7f07000e;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;

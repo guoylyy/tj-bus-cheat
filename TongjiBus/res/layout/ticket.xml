@@ -4,10 +4,40 @@
     android:layout_height="match_parent">
     
     <RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tj_pic_titlebar"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="车票"
+            android:textSize="20sp" 
+            android:textColor="#FFF"/>
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dip"
+            android:textColor="#FFF"
+            android:background="@drawable/tj_pic_btnbg"
+            android:textSize="16sp" 
+            android:text=" 返回" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
         android:id="@+id/imageLayout1"
         android:layout_width="match_parent"
         android:layout_height="140dip"
-        android:layout_alignParentTop="true" >
+        android:layout_below="@+id/titleLayout" >
 
         <TextView
             android:id="@+id/streamNumber"
@@ -48,7 +78,7 @@
             android:layout_marginBottom="18dp"
             android:text="2014-05-20 16:00"
             android:textColor="#FF0000" />
-        
+
     </RelativeLayout>
     
     <RelativeLayout
@@ -121,6 +151,7 @@
             android:layout_height="match_parent"
             android:src="@drawable/tj_pic_jiading_to_other"
             android:layout_alignParentBottom="true" />
+
     </RelativeLayout>
 
 </RelativeLayout>
