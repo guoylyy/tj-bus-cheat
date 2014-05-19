@@ -31,11 +31,23 @@ public class TicketActivity extends Activity {
 		Intent ticketIntent = getIntent();
 		String name = ticketIntent.getExtras().get("name").toString();
 		TextView nameView = (TextView) findViewById(R.id.nameText);
+		nameView.setText(name);
+		
+		String number = ticketIntent.getExtras().get("number").toString();
+		TextView numberView = (TextView)findViewById(R.id.stNumber);
+		numberView.setText(number);
+		
+		
+		String startStation = ticketIntent.getExtras().get("startStation").toString();
+		TextView startStationView = (TextView)findViewById(R.id.startStationView);
+		startStationView.setText(startStation);
+		
+		String endStation = ticketIntent.getExtras().get("endStation").toString();
+		TextView endStationView = (TextView)findViewById(R.id.endStationView);
+		endStationView.setText(endStation);
 
 		TextView streamNumberView = (TextView) findViewById(R.id.streamNumber);
 		streamNumberView.setText(this.getStreamNumber());
-
-		nameView.setText(name);
 		
 		final Handler handler2 = new Handler()
 		{
