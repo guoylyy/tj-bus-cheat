@@ -3,6 +3,7 @@
 #################
 
 *.pydevproject
+*.class
 .project
 .metadata
 bin/

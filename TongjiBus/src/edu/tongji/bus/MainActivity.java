@@ -3,8 +3,6 @@ package edu.tongji.bus;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
-import android.app.Dialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -40,11 +38,9 @@ public class MainActivity extends Activity {
 		submit.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				Intent ticketIntent = new Intent();
-				// Get parameters from view
+				
 				if (checkIntergrity()) {
-
+					Intent ticketIntent = new Intent();
 					ticketIntent.putExtra("name", nameTextView.getText());
 					ticketIntent.putExtra("number", numberTexView.getText());
 					ticketIntent.putExtra("startStation",
