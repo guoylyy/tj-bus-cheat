@@ -84,6 +84,26 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
             android:text="中环直达" />
+		
+        
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80dip"
+            android:layout_marginRight="80dip"
+            android:layout_marginTop="30dip"
+            android:max="100" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="80dip"
+            android:src="@drawable/tj_pic_bus" />
 
     </RelativeLayout>
 
