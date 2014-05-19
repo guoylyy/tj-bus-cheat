@@ -19,7 +19,7 @@
             android:text="流水号：201405191358401811007" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/nameText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"

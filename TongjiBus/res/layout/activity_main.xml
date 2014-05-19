@@ -4,5 +4,139 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="edu.tongji.bus.MainActivity"
-    tools:ignore="MergeRootFrame" />
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="28dp"
+            android:text="姓名:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="15dp"
+            android:text="学号:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/TextView01"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:ems="10"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView01"
+            android:layout_below="@+id/TextView01"
+            android:layout_marginTop="20dp"
+            android:text="起点:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView02"
+            android:layout_below="@+id/TextView02"
+            android:layout_marginTop="22dp"
+            android:text="终点:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView05"
+            android:layout_alignBottom="@+id/TextView05"
+            android:layout_alignLeft="@+id/MultiAutoCompleteTextView02"
+            android:ems="10"
+            />
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView04"
+            android:layout_below="@+id/TextView04"
+            android:layout_marginTop="28dp"
+            android:text="直达类型:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView03"
+            android:layout_centerVertical="true"
+            android:text="时间:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="300dip"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/name"
+            android:layout_below="@+id/time"
+            android:layout_marginTop="20dp"
+            android:text="一键生成" />
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/TextView02"
+            android:layout_alignLeft="@+id/name"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/start_station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/TextView03"
+            android:layout_alignLeft="@+id/number"
+            android:ems="10" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/end_station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/TextView03"
+            android:layout_alignLeft="@+id/start_station"
+            android:ems="10" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/MultiAutoCompleteTextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/TextView05"
+            android:layout_alignLeft="@+id/end_station"
+            android:ems="10" />
+
+    </RelativeLayout>
+
+</FrameLayout>
 
