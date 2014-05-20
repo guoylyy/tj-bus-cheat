@@ -23,6 +23,7 @@ public class TicketActivity extends Activity {
 	
 	private final int INCREMENT_STEP = 1;
 	
+	@SuppressLint("HandlerLeak")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -48,6 +49,15 @@ public class TicketActivity extends Activity {
 
 		TextView streamNumberView = (TextView) findViewById(R.id.streamNumber);
 		streamNumberView.setText(this.getStreamNumber());
+		
+		TextView datetimeTextView = (TextView)findViewById(R.id.dateTime);
+		String datetime = ticketIntent.getExtras().get("dateTime").toString();
+		datetimeTextView.setText(datetime.substring(0, datetime.length()-3));
+		
+		String transType = ticketIntent.getExtras().get("type").toString();
+		TextView transTypeTextView = (TextView)findViewById(R.id.transType);
+		//transType = transType.substring(1, transType.length()-2) + "00";
+		transTypeTextView.setText(transType);
 		
 		final Handler handler2 = new Handler()
 		{

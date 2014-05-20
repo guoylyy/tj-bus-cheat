@@ -70,7 +70,7 @@
             android:textSize="22sp" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/dateTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -109,7 +109,7 @@
             android:textSize="22sp" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/transType"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"

@@ -77,7 +77,7 @@
             android:layout_above="@+id/TextView02"
             android:layout_alignLeft="@+id/name"
             android:ems="10"
-            android:inputType="textPersonName" />
+         />
 
         <MultiAutoCompleteTextView
             android:id="@+id/start_station"
@@ -132,8 +132,8 @@
             android:layout_width="300dip"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/date_time"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="19dp"
+            android:layout_below="@+id/typeText"
+            android:layout_marginTop="38dp"
             android:text="一键生成" />
 
     </RelativeLayout>
